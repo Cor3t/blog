@@ -1,0 +1,136 @@
+body {
+    margin: 8px;
+    background-color:black;
+    color: white;    
+    font-family: -apple-system, BlinkMacSystemFont, 
+                 "Segoe UI", Roboto, Oxygen-Sans, 
+                 Ubuntu, Cantarell, "Helvetica Neue", 
+                 sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+a {
+    color: #1a0dab;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+div.wrapper h1{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 2.7em;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+nav{
+    justify-self: end;
+}
+nav li{
+    display: inline-block;
+    margin-left: 10px;
+}
+nav button{
+    background: none;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    font-size: 1em;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.article{
+    padding: 10px;
+    border: 1px solid #00dbaa;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.article h2{
+    font-size: 1.4em;
+}
+
+.article .author{
+    padding: 10px;
+    background: 00dbalimegreen;
+    position:absolute;
+    margin:0;
+    bottom:0;
+    right:0;
+}
+
+.article-detail .article{
+    padding: 0;
+}
+
+.article-detail .article img{
+    max-width: 100%;
+}
+
+.article-detail .article h2{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2em;
+}
+
+.article-detail .article p{
+    text-align: center;
+}
+
+.site-form{
+    margin-top:60px;
+    border:1px solid #00dba0;
+    padding:20px;
+}
+a.highlight{
+    border:1px solid #00dba0;
+    padding:10px;
+    border-radius:4px;
+    color:#00dba0;
+}
+.site-form {
+    margin-top: 60px;
+    border: 1px solid #00dba0;
+    padding: 20px;
+    font-size: 0.9em;
+    margin: 0 auto 20px;
+    color: #bbb;
+    display: block;
+}
+ul.errorlist{
+    padding:10px;
+    list-style-type:none;
+    border:1px solid#ff5722;
+    color:#ff5722;
+    margin:10px 0;
+}
+li.errorlist{
+    padding:0;
+}
+
+.site-form input[type='submit']{
+    background:#00dba0;
+    border:0;
+    color:#fff;
+    font-size:1.1em;
+    border-radius:4px;
+    margin:10px 0;
+}
