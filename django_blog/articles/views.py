@@ -18,7 +18,7 @@ def article_detail(request, slug):
 @login_required(login_url='/accounts/login/')
 def article_create(request):
   if request.method == 'POST':
-    form = forms.CreateArticle(request.POST.request.FILES)
+    form = forms.CreateArticle(request.POST)
     if form.is_valid():
       instance = form.save(commit=False)
       instance.author = request.user
